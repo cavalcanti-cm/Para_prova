@@ -1,58 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-   
-   <link rel="stylesheet" href="./css/style.css"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
-  
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuck Norris API</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png" alt="Logo" />
+      <div>
+        <span>Escolha o tema da piada</span>
+        <select name="select" id="select">
+        </select>
+       
+      </div>
 
-<body>
-    <div class="container">
-        <header class="header">
-            <h1 class="header__title">TODO LIST</h1>
-            <section id="form_container" class="form_container">
-                <h2 class="for-container__title">cadrasto de Atividades</h2>
-                <br>
-                <form class="item-form" id="item-form" method="post">
-                    <input type="text" name="name" id="name" class="item-form__input" placeholder="Digite a atividade">
-                    <textarea id="descripiton" class="item-form__textarea"
-                        placeholder="Descreva a sua atividade"></textarea>
-                    <button type="submit" class="item-form__button">cadrastar</button>
-                </form>
-                <div id="message" class="message"></div>
-            </section>
-        </header>
+      <button id="btnEnviar" class="btn">Enviar</button>
+      <p id="joke">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+        delectus voluptatem natus odit ratione a omnis magnam harum rerum
+        itaque? Debitis voluptates voluptatem veritatis nihil dolorum rem?
+        Culpa, mollitia eum.
+      </p>
 
-        <main class="main">
-            <section id="item-list" class="item-list">
-                <article class="item-card">
-                    <header class="item-card__header">
-                        <h2 class="item-card__title">Título da Atividade</h2>
-                    </header>
-
-                    <section class="item-card__body">
-                        <p>está é a descrição da atividade. Aqui você pode detalhar as informações importantes sobre a
-                            atividade.</p>
-                    </section>
-
-                    <footer class="item-card">
-                        <button class="item-card__button item-card__button--edit">
-                            Editar
-                        </button>
-                        <button class="item-card__button item-card__button--delete">
-                            Excluir
-                        </button>
-                    </footer>
-                </article>
-            </section>
-        </main>
-    </div>
-    <script src="./js/app.js"></script>
-</body>
-
+    </main>
+    <script src="./app.js"></script>
+  </body>
 </html>
